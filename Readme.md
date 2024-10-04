@@ -1,4 +1,3 @@
-markdown_content = """
 # GAMIFIED CROWD-SOURCING OF HIGH-QUALITY DATA FOR VISUAL FINE-TUNING
 
 This repository contains the code and dataset for the paper: **Gamified Adversarial Prompting (GAP)** - *A Framework for Crowd-Sourcing High-Quality Data for Visual Fine-Tuning*. This work proposes a unique approach to collecting high-quality data for large multimodal models through a gamified, crowd-sourcing methodology.
