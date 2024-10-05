@@ -6,7 +6,7 @@
 
 Join our [💬 Telegram](https://t.me/Fraction_AI)
 
-GAP-VQA Dataset [🤗](https://huggingface.co/datasets/openbmb/GAP-VQA) | MiniCPM-Llama3-V-2.5-8B fine-tuned on GAP [🤗](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5-GAP) | [GAP Technical Report](https://arxiv.org/abs/XXXX.XXXXX)
+GAP-VQA Dataset [🤗](https://huggingface.co/datasets/fractionai/GAP-VQA-Dataset) | MiniCPM-Llama3-V-2.5-8B fine-tuned on GAP [🤗](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5-GAP) | [GAP Technical Report](https://arxiv.org/abs/XXXX.XXXXX)
 
 ## News
 
@@ -155,7 +155,7 @@ Our participation data reveals a highly engaged user base:
  0.1 |    ■   ■   ■   ■   ■   ■   ■   ■   ■   ■
      |    ■   ■   ■   ■   ■   ■   ■   ■   ■   ■
    0 |____■___■___■___■___■___■___■___■___■___■___
-     1   2   3   4   5   6   7   8   9   10  11
+		  1   2   3   4   5   6   7   8   9   10
                  Number of Images
 ```
 
@@ -163,7 +163,6 @@ This graph showcases the exceptional engagement level of our participants:
 
 - The striking peak at 10 images demonstrates that the vast majority of active users complete entire sessions, indicating high levels of engagement and satisfaction with the game design.
 - The consistent interaction across 1-9 images suggests that even users who don't complete full sessions still provide valuable data, contributing to the richness of our dataset.
-- The small uptick at 11 images represents our most dedicated users who often engage beyond the standard session length, further enriching our data collection.
 
 These participation patterns highlight the GAP framework's success in creating an addictive and rewarding experience that motivates users to contribute high-quality data consistently.
 
@@ -174,36 +173,45 @@ These participation patterns highlight the GAP framework's success in creating a
 ### Installation
 
 ```bash
-git clone https://github.com/your-repo/GAP-framework.git
-cd GAP-framework
-pip install -r requirements.txt
+git clone https://github.com/fraction-ai/GAP.git
 ```
 
 ### Example Usage
 
 ```python
-import torch
-from transformers import AutoModel, AutoTokenizer
+from peft import PeftModel
+from transformers import AutoModel
 
-model = AutoModel.from_pretrained('openbmb/MiniCPM-Llama3-V-2_5-GAP', trust_remote_code=True)
-tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-Llama3-V-2_5-GAP', trust_remote_code=True)
+# Define model type and path to the adapter
+model_type = "openbmb/MiniCPM-Llama3-V-2.5"
+path_to_adapter = "path_to_lora_checkpoint"
+
+# Load the base pre-trained model
+model = AutoModel.from_pretrained(
+    model_type,
+    trust_remote_code=True
+)
+
+# Load the LoRA adapter and move model to GPU
+lora_model = PeftModel.from_pretrained(
+    model,
+    path_to_adapter,
+    device_map="auto",
+    trust_remote_code=True
+).eval().cuda()
 
 # Your code here
 ```
 
 ### Dataset
 
-The GAP-VQA dataset (3,683 question-image pairs) is available on [Hugging Face](https://huggingface.co/datasets/openbmb/GAP-VQA).
+The GAP-VQA dataset (3,683 question-image pairs) is available on [Hugging Face](https://huggingface.co/datasets/fractionai/GAP-VQA-Dataset).
 
-### Evaluation and Fine-tuning
+### Fine-tuning and Evaluation
 
-```bash
-# Evaluation
-python evaluate.py --model_name openbmb/MiniCPM-Llama3-V-2_5-GAP --dataset gap-vqa
+LoRA fine-tuning scripts have been set up for [MiniCPM-Llama3-V-2_5](https://github.com/fraction-ai/GAP/tree/main/finetune/MiniCPM-Llama3-V-2.5) and [Qwen2-VL](https://github.com/fraction-ai/GAP/tree/main/finetune/Qwen2-VL/LLaMA-Factory). Detailed instructions can be found inside each link.
 
-# Fine-tuning
-python finetune.py --model_name your_base_model --dataset gap-vqa
-```
+Instructions for Benchmark Evaluation of LoRA fine-tuned models are present in [VLMEvalkit](https://github.com/fraction-ai/GAP/tree/main/evaluate/VLMEvalKit). You can also check out [GPT-4V Score](https://github.com/fraction-ai/GAP/tree/main/evaluate/gpt_score) calculation to compute the GPT scores for these models. 
 
 ## Future Work
 
@@ -219,7 +227,7 @@ These advancements aim to create a more scalable, efficient, and widely applicab
 
 ## Contributing and Community
 
-We welcome contributions! See our [CONTRIBUTING.md](CONTRIBUTING.md) for details. Join our [Discord](#) for discussions, follow us on [Twitter](#) for updates, and check our [Blog](#) for in-depth content.
+We welcome contributions! See our [CONTRIBUTING.md](CONTRIBUTING.md) for details. Join our [Telegram](https://t.me/Fraction_AI) for discussions, follow us on [Twitter](https://x.com/FractionAI_xyz) for updates, and check our [Blog](https://medium.com/@fractionai) for in-depth content.
 
 ## License and Citation
 
@@ -228,7 +236,7 @@ This project is licensed under the Apache 2.0 License. If you find our work help
 ```bibtex
 @article{gap2024,
   title={Gamified Adversarial Prompting (GAP) - A Framework for Crowd-Sourcing High-Quality Data for Visual Fine-Tuning},
-  author={Author, A. and Author, B. and Author, C.},
+  author={Shashank Yadav, Rohan Tomar, Garvit Jain, Chirag Ahooja, Shubham Chaudhary, Charles Elkan},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
   year={2024}
 }
