@@ -47,12 +47,12 @@ from peft import PeftModel
 from transformers import AutoModel
 
 # Define model type and path to the adapter
-model_type = "openbmb/MiniCPM-Llama3-V-2.5"
+model_path = "openbmb/MiniCPM-Llama3-V-2.5"
 path_to_adapter = "path_to_your_fine_tuned_checkpoint"
 
 # Load the base pre-trained model
 model = AutoModel.from_pretrained(
-    model_type,
+    model_path,
     trust_remote_code=True
 )
 
@@ -64,9 +64,3 @@ lora_model = PeftModel.from_pretrained(
     trust_remote_code=True
 ).eval().cuda()
 ```
-
-## Output
-
-The output will be the fine-tuned model with the adapter applied, ready for evaluation or further fine-tuning.
-
----

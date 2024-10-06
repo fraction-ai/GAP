@@ -6,7 +6,7 @@
 
 Join our [💬 Telegram](https://t.me/Fraction_AI)
 
-GAP-VQA Dataset [🤗](https://huggingface.co/datasets/fractionai/GAP-VQA-Dataset) | MiniCPM-Llama3-V-2.5-8B fine-tuned on GAP [🤗](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5-GAP) | [GAP Technical Report](https://arxiv.org/abs/XXXX.XXXXX)
+GAP-VQA Dataset [🤗](https://huggingface.co/datasets/fractionai/GAP-VQA-Dataset) | MiniCPM-Llama3-V-2.5-8B fine-tuned on GAP [🤗](https://huggingface.co/fractionai/MiniCPM-Llama3-V-2.5-checkpoint) | [GAP Technical Report](https://arxiv.org/abs/XXXX.XXXXX)
 
 ## News
 

@@ -54,7 +54,7 @@ from peft import PeftModel
 from transformers import Qwen2VLForConditionalGeneration
 
 # Define the model type and path to the fine-tuned LoRA adapter
-model_type = "Qwen/Qwen2-VL-7B"  # Or "Qwen/Qwen2-VL-2B" for the smaller model
+model_path = "Qwen/Qwen2-VL-7B"  # Or "Qwen/Qwen2-VL-2B" for the smaller model
 path_to_adapter = "path_to_your_fine_tuned_checkpoint"
 
 # Load the base pre-trained model
@@ -70,9 +70,3 @@ lora_model = PeftModel.from_pretrained(
     trust_remote_code=True
 ).eval().cuda()
 ```
-
-## Output
-
-After fine-tuning, the output will be the fine-tuned `Qwen2-VL` model with the LoRA adapter applied. This model can now be used for inference or further fine-tuning on additional tasks.
-
----
