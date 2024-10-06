@@ -9,6 +9,7 @@ from ..base import BaseModel
 from .prompt import Qwen2VLPromptMixin
 from peft import PeftModel
 
+checkpoint = '<checkpoint>'
 
 def ensure_image_url(image: str) -> str:
     prefixes = ['http://', 'https://', 'file://', 'data:image;']
@@ -63,7 +64,6 @@ class Qwen2VLChat(Qwen2VLPromptMixin, BaseModel):
 
         from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor
 
-        checkpoint = '<checkpoint>'
         assert model_path is not None
         self.model_path = model_path
         self.processor = Qwen2VLProcessor.from_pretrained(model_path)
