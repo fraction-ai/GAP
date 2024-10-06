@@ -155,7 +155,7 @@ Our participation data reveals a highly engaged user base:
  0.1 |    ■   ■   ■   ■   ■   ■   ■   ■   ■   ■
      |    ■   ■   ■   ■   ■   ■   ■   ■   ■   ■
    0 |____■___■___■___■___■___■___■___■___■___■___
-		  1   2   3   4   5   6   7   8   9   10
+          1   2   3   4   5   6   7   8   9   10
                  Number of Images
 ```
 
