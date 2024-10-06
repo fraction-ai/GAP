@@ -142,31 +142,31 @@ Our participation data reveals a highly engaged user base:
 ### Images Interacted Per Session
 
 ```
- 0.6 |                                        ■
-     |                                        ■
- 0.5 |                                        ■
-     |                                        ■
- 0.4 |                                        ■
-     |                                        ■
- 0.3 |                                        ■
-     |                                        ■
- 0.2 |                                        ■
-     |                    ■                   ■
- 0.1 |    ■   ■   ■   ■   ■   ■   ■   ■   ■   ■
-     |    ■   ■   ■   ■   ■   ■   ■   ■   ■   ■
-   0 |____■___■___■___■___■___■___■___■___■___■___
-          1   2   3   4   5   6   7   8   9   10
-                 Number of Images
+ 0.7 |                                     ■
+     |                                     ■
+ 0.6 |                                     ■
+     |                                     ■
+ 0.5 |                                     ■
+     |                                     ■
+ 0.4 |                                     ■
+     |                                     ■
+ 0.3 |                                     ■
+     |                                     ■
+ 0.2 |                                     ■
+     |                                     ■
+ 0.1 | ■                                   ■
+     | ■   ■                               ■
+ 0.0 |_■___■___■___■___■___■___■___■___■___■___
+       1   2   3   4   5   6   7   8   9   10
+            Number of Images Interacted
 ```
 
-This graph showcases the exceptional engagement level of our participants:
-
-- The striking peak at 10 images demonstrates that the vast majority of active users complete entire sessions, indicating high levels of engagement and satisfaction with the game design.
-- The consistent interaction across 1-9 images suggests that even users who don't complete full sessions still provide valuable data, contributing to the richness of our dataset.
-
-These participation patterns highlight the GAP framework's success in creating an addictive and rewarding experience that motivates users to contribute high-quality data consistently.
-
-[The rest of the README remains the same as in the previous version]
+The above figure shows that when users do participate, they overwhelmingly interact with all 10
+images in a session, as evidenced by the pronounced spike at the 10-image mark. This suggests that
+the game design effectively encourages thorough engagement once a session begins.
+The active user base, while smaller, provides valuable data on the game’s appeal and effectiveness.
+The high completion rate of sessions and the presence of repeat participants indicate strong engage-
+ment among active users, showcasing the game’s potential to retain and involve players consistently.
 
 ## Usage and Implementation
 
