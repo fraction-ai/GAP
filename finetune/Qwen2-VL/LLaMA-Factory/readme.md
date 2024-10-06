@@ -15,6 +15,7 @@ This guide provides instructions for setting up the environment and running LoRA
 2. Install the necessary dependencies for the project:
    ```bash
    pip install -e ".[torch,metrics]"
+   pip install deepspeed wandb
    ```
 
 This will install all the required libraries, including `torch` and necessary metrics for model finetuning.

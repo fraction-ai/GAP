@@ -14,9 +14,7 @@ This guide provides instructions for setting up the environment and running LoRA
 
 2. Install necessary dependencies:
    ```bash
-   pip install torch transformers accelerate deepspeed peft torchvision
-   pip install wandb
-   pip install wheel
+   pip install torch transformers accelerate deepspeed peft torchvision wandb wheel
    pip install flash_attn
    ```
 

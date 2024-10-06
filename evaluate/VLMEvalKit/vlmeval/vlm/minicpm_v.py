@@ -100,7 +100,7 @@ class MiniCPM_Llama3_V(BaseModel):
         self.model_path = model_path
         print(f'load from {self.model_path}')
         checkpoint = '<checkpoint>'
-        model = AutoModel.from_pretrained(self.model_path, trust_remote_code=True, dtype=torch.float16, low_cpu_mem_usage=True)
+        model = AutoModel.from_pretrained(self.model_path, trust_remote_code=True, torch_dtype=torch.float16, low_cpu_mem_usage=True)
         self.model = PeftModel.from_pretrained(
             model,               # The base MiniCPM model
             checkpoint,          # Your fine-tuned checkpoint path

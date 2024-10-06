@@ -71,7 +71,7 @@ def main():
         author="hiyouga",
         author_email="hiyouga" "@" "buaa.edu.cn",
         description="Easy-to-use LLM fine-tuning framework",
-        long_description=open("README.md", "r", encoding="utf-8").read(),
+        long_description="Easy-to-use LLM fine-tuning framework",
         long_description_content_type="text/markdown",
         keywords=["LLaMA", "BLOOM", "Falcon", "LLM", "ChatGPT", "transformer", "pytorch", "deep learning"],
         license="Apache 2.0 License",

@@ -15,6 +15,7 @@ pillow
 portalocker
 protobuf
 python-dotenv
+qwen_vl_utils
 requests
 rich
 sentencepiece
@@ -23,7 +24,8 @@ sty
 tabulate
 tiktoken
 timeout-decorator
-torch>=2.0.1
+torch==2.1.2
+torchvision==0.16.2
 tqdm
 transformers
 typing_extensions==4.7.1

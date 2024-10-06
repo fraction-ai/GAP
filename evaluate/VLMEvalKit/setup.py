@@ -80,9 +80,6 @@ def parse_requirements(fname='requirements.txt', with_version=True):
     return packages
 
 
-with open('README.md') as f:
-    readme = f.read()
-
 
 def do_setup():
     setup(
@@ -93,7 +90,7 @@ def do_setup():
         author_email='dhd.efz@gmail.com',
         maintainer='Haodong Duan',
         maintainer_email='dhd.efz@gmail.com',
-        long_description=readme,
+        long_description='OpenCompass VLM Evaluation Kit',
         long_description_content_type='text/markdown',
         cmdclass={},
         install_requires=parse_requirements('requirements.txt'),

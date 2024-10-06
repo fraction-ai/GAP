@@ -1,4 +1,4 @@
-# VLM Eval Kit Quickstart Guide
+# VLMEvalKit Quickstart Guide
 
 This guide walks through the quickstart steps for using the VLMEvalKit to evaluate pre-trained vision-language models. Follow these instructions to set up the environment and begin using the evaluation kit.
 
@@ -27,7 +27,12 @@ This guide walks through the quickstart steps for using the VLMEvalKit to evalua
 
    ```bash
    pip install wheel
-   pip install flash-attn
+   pip install flash-attn --no-cache-dir
+   ```
+
+4. Ensure the `.env` file contains the `OPENAI_API_KEY` in the following format:
+   ```
+   OPENAI_API_KEY=your_openai_api_key
    ```
 
 ## Preparing Your Evaluation
@@ -39,7 +44,7 @@ You will need to download and set the lora checkpoint before evaluation. You can
 
 ## Running an Evaluation
 
-You can run the script with python or torchrun for any of the three models - MiniCPM-Llama3-V-2_5, Qwen2-VL-7B-Instruct or Qwen2-VL-2B-Instruct:
+You can run the script with python or torchrun for any of the three models - `MiniCPM-Llama3-V-2_5`, `Qwen2-VL-7B-Instruct` or `Qwen2-VL-2B-Instruct`:
 
 ```bash
 # When running with `python`, only one VLM instance is instantiated, and it might use multiple GPUs (depending on its default behavior).
