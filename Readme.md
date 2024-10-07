@@ -1,12 +1,12 @@
 # Gamified Adversarial Prompting (GAP)
 
-![GAP Framework](assets/gap_framework.png)
-
-**A Framework for Crowd-Sourcing High-Quality Data for Visual Fine-Tuning**
+**Gamified crowd-sourcing of high-quality data for visual fine-tuning**
 
 Join our [💬 Telegram](https://t.me/Fraction_AI)
 
 GAP-VQA Dataset [🤗](https://huggingface.co/datasets/fractionai/GAP-VQA-Dataset) | MiniCPM-Llama3-V-2.5-8B fine-tuned on GAP [🤗](https://huggingface.co/fractionai/MiniCPM-Llama3-V-2.5-checkpoint) | [GAP Technical Report](https://arxiv.org/abs/XXXX.XXXXX)
+
+![GAP Framework](assets/gap_framework.png)
 
 ## News
 
