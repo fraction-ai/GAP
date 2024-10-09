@@ -227,7 +227,17 @@ These advancements aim to create a more scalable, efficient, and widely applicab
 
 ## Contributing and Community
 
-We welcome contributions! See our [CONTRIBUTING.md](CONTRIBUTING.md) for details. Join our [Telegram](https://t.me/Fraction_AI) for discussions, follow us on [Twitter](https://x.com/FractionAI_xyz) for updates, and check our [Blog](https://medium.com/@fractionai) for in-depth content.
+We welcome contributions! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Open a Pull Request (PR) to the main repository.
+
+Please ensure your code follows the standard guidelines and is well-tested.
+
+You can join our [Telegram](https://t.me/Fraction_AI) for discussions, follow us on [Twitter](https://x.com/FractionAI_xyz) for updates, and check our [Blog](https://medium.com/@fractionai) for in-depth content.
 
 ## License and Citation
 
