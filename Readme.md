@@ -4,15 +4,15 @@
 
 Join our [💬 Telegram](https://t.me/Fraction_AI)
 
-GAP-VQA Dataset [🤗](https://huggingface.co/datasets/fractionai/GAP-VQA-Dataset) | MiniCPM-Llama3-V-2.5-8B fine-tuned on GAP [🤗](https://huggingface.co/fractionai/MiniCPM-Llama3-V-2.5-checkpoint) | [GAP Technical Report](https://arxiv.org/abs/XXXX.XXXXX)
+GAP-VQA Dataset [🤗](https://huggingface.co/datasets/fractionai/GAP-VQA-Dataset) | MiniCPM-Llama3-V-2.5-8B fine-tuned on GAP [🤗](https://huggingface.co/fractionai/MiniCPM-Llama3-V-2.5-checkpoint) | [GAP Technical Report](https://arxiv.org/abs/2410.04038)
 
 ![GAP Framework](assets/gap_framework.png)
 
 ## News
 
-* [2024.09.16] 🚀🚀🚀 We open-source the GAP-VQA dataset and fine-tuned models! Try them now on Hugging Face!
-* [2024.09.10] Our paper "Gamified Adversarial Prompting (GAP) - A Framework for Crowd-Sourcing High-Quality Data for Visual Fine-Tuning" is now available on arXiv.
-* [2024.08.15] We've reached over 50,000 participants in our GAP platform!
+* [2024.10.10] Our paper "Gamified Adversarial Prompting (GAP) - A Framework for Crowd-Sourcing High-Quality Data for Visual Fine-Tuning" is now available on arXiv.
+* [2024.10.05] 🚀🚀🚀 We open-source the GAP-VQA dataset and fine-tuned models! Try them now on [Hugging Face](https://huggingface.co/fractionai)!
+* [2024.09.16] We've reached over 50,000 participants in our GAP platform!
 
 ## Table of Contents
 
@@ -244,10 +244,13 @@ You can join our [Telegram](https://t.me/Fraction_AI) for discussions, follow us
 This project is licensed under the Apache 2.0 License. If you find our work helpful, please cite our paper:
 
 ```bibtex
-@article{gap2024,
-  title={Gamified Adversarial Prompting (GAP) - A Framework for Crowd-Sourcing High-Quality Data for Visual Fine-Tuning},
-  author={Shashank Yadav, Rohan Tomar, Garvit Jain, Chirag Ahooja, Shubham Chaudhary, Charles Elkan},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2024}
+@misc{yadav2024gamifiedcrowdsourcinghighqualitydata,
+      title={Gamified crowd-sourcing of high-quality data for visual fine-tuning}, 
+      author={Shashank Yadav and Rohan Tomar and Garvit Jain and Chirag Ahooja and Shubham Chaudhary and Charles Elkan},
+      year={2024},
+      eprint={2410.04038},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2410.04038}, 
 }
 ```
